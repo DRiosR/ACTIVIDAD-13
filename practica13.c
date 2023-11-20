@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <time.h>
 #include "RRD.h"
 typedef struct Datos_de_empleado
 {
@@ -33,6 +34,7 @@ void Respaldo_Con_Retraso(FILE *fa);
 
 int main()
 {
+    srand(time(NULL));
     Tdatos registros[5000];
     FILE *archivo, *archivo_binario, *archivo_borrados = fopen("archivos_eliminados.dll", "ab");
     char nombre_archivo[20];
