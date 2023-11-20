@@ -389,7 +389,7 @@ void buscar(Tdatos registros[], int *num_registros)
 void buscar_modificar(Tdatos registros[], int *num_registros)
 {
     int numero_a_encontrar, encontrado = 0, opc;
-    int i, j, numero_empleado = 0, numero_social = 0;
+    int i, numero_empleado = 0, numero_social = 0;
     int num_telefono, limite_maximo = 100000000, prefijo;
     int year, dia, mes, bis, year2, dia2, mes2, bis2, num;
     char fecha_ingreso[12], fecha_nacimiento[12], nom[20], nom2[20], AP[20], AM[20], direccion[30], numero_telefono[12], numero_telefono_estructurado[20];
